@@ -2,6 +2,7 @@
   <div id="app">
    <SiteHeader />
    <SiteMain />
+   <ServicesComponent />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteMain from './components/SiteMain.vue'
+import ServicesComponent from './components/ServicesComponent.vue'
 export default {
   name: 'App',
   components: {
     // HelloWorld
     SiteHeader,
     SiteMain,
+    ServicesComponent,
   }
 }
 </script>
@@ -43,9 +46,13 @@ img {
 }
 
 .row {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.col-2 {
+  width: calc(100% / 12) * 2;
 }
 
 .col-4 {

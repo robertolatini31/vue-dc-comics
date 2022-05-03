@@ -7,7 +7,7 @@
             </div>
             <!--/.logo_header  -->
             <div class="col-8">
-                <NavbarHeader />
+                <NavbarComponent />
             </div>
             <!--/.navbar_header  -->
         </div>
@@ -19,11 +19,11 @@
 </template>
 
 <script>
-import NavbarHeader from './NavbarHeader.vue'
+import NavbarComponent from './NavbarComponent.vue'
 export default {
    name: 'SiteHeader',
    components: {
-       NavbarHeader,
+       NavbarComponent,
    }
 }
 </script>
