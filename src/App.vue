@@ -49,6 +49,7 @@ img {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 auto;
 }
 
 .col-2 {
