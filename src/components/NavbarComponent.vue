@@ -1,16 +1,8 @@
 <template>
     <nav>
         <ul>
-            <li>characters</li>
-            <li class="active">comics</li>
-            <li>movies</li>
-            <li>tv</li>
-            <li>games</li>
-            <li>collectibles</li>
-            <li>videos</li>
-            <li>fans</li>
-            <li>news</li>
-            <li>shop</li>
+            <li v-for="(li, index) in menu" :key="index">{{li.li}}</li>
+            
         </ul>
     </nav>
     <!-- ./ navbar  -->
@@ -18,7 +10,43 @@
 
 <script>
 export default {
-    name: 'NavbarHeader'
+    name: 'NavbarHeader',
+    data() {
+        return {
+            menu: [
+                {
+                    li: 'characters'
+                },
+                {
+                    li: 'comics'
+                },
+                {
+                    li: 'movies'
+                },
+                {
+                    li: 'tv'
+                },
+                {
+                    li: 'games'
+                },
+                {
+                    li: 'collectibles'
+                },
+                {
+                    li: 'videos'
+                },
+                {
+                    li: 'fans'
+                },
+                {
+                    li: 'news'
+                },
+                {
+                    li: 'shop'
+                },
+            ]
+        }
+    }
 }
 </script>
 
