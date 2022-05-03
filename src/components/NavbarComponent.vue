@@ -33,6 +33,7 @@ nav {
             padding: 2rem 1rem;
             font-size: 0.8rem;
             font-weight: 600;
+            cursor: pointer;
         }
     }
 }
