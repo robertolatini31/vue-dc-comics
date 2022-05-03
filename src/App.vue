@@ -4,6 +4,7 @@
    <SiteMain />
    <ServicesComponent />
    <SectionDcLists />
+   <SiteFooter />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import SiteHeader from './components/SiteHeader.vue'
 import SiteMain from './components/SiteMain.vue'
 import ServicesComponent from './components/ServicesComponent.vue'
 import SectionDcLists from './components/SectionDcLists.vue'
+import SiteFooter from './components/SiteFooter.vue'
 export default {
   name: 'App',
   components: {
@@ -21,6 +23,7 @@ export default {
     SiteMain,
     ServicesComponent,
     SectionDcLists,
+    SiteFooter,
   }
 }
 </script>
