@@ -27,6 +27,7 @@ nav {
     ul {
         list-style: none;
         li {
+            color: #464646;
             text-transform: uppercase;
             display: inline-block;
             padding: 2rem 1rem;
@@ -37,7 +38,7 @@ nav {
 }
 
 .active {
-    color: blue;
+    color: #0282F9;
     position: relative;
 }
 
@@ -49,6 +50,6 @@ nav {
   transform: translate(-50%,-50%);
   height: 1px;
   width: 50%; 
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #0282F9;
 }
 </style>

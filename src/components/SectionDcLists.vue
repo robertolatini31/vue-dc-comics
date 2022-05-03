@@ -74,7 +74,7 @@ ul {
         font-size: 0.8rem;
         a {
             text-decoration: none;
-            color: lightgrey;
+            color: #959595;
         }
     }
     

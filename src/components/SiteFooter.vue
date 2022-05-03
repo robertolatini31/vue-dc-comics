@@ -30,20 +30,20 @@ export default {
 
 footer {
     padding: 2rem 1rem;
-    background-color: rgb(69, 69, 69);
+    background-color: #303030;
 }
 
 h3 {
     text-transform: uppercase;
     font-weight: 900;
-    color: blue;
+    color: #0282F9;
 }
 
 button {
     text-transform: uppercase;
     background-color: transparent;
     padding: 0.7rem;
-    border: 2px solid blue;
+    border: 2px solid #0282F9;
     color: white;
     font-weight: 600;
 }
