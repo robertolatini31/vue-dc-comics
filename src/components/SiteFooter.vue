@@ -49,8 +49,8 @@ button {
 }
 
 .text-right {
-   display: flex;
-    justify-content: end;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
     column-gap: 1rem;
 }
