@@ -2,37 +2,12 @@
    <section>
         <div class="container">
         <div class="row">
-            <div class="col-2special">
+            <div class="col-2special" v-for="({href, src, text}, index) in services" :key="index">
                 <div>
-                    <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
-                    <a href="#">digital comics</a>
+                    <img :src="src" alt="">
+                    <a :href="href">{{text}}</a>
                 </div>
             </div>
-            <div class="col-2special">
-                <div>
-                    <img src="@/assets/img/buy-comics-merchandise.png" alt="">
-                    <a href="#">dc merchandise</a>
-                </div>
-            </div>
-            <div class="col-2special">
-                <div>
-                    <img src="@/assets/img/buy-comics-subscriptions.png" alt="">
-                    <a href="#">subscriptions</a>
-                </div>
-            </div>
-            <div class="col-2special">
-                <div>
-                    <img src="@/assets/img/buy-comics-shop-locator.png" alt="">
-                    <a href="#">comic shop locator</a>
-                </div>
-            </div>
-            <div class="col-2special">
-                <div>
-                    <img src="@/assets/img/buy-dc-power-visa.svg" alt="">
-                    <a href="#">dc power visa</a>
-                </div>
-            </div>
-            
         </div>
         <!-- /.row -->
     </div>
@@ -43,6 +18,37 @@
 <script>
 export default {
     name: 'ServicesComponent',
+    data() {
+        return {
+            services: [
+                {
+                    href: '#',
+                    src: require('@/assets/img/buy-comics-digital-comics.png'),
+                    text: 'digital comics'
+                },
+                {
+                    href: '#',
+                    src: require('@/assets/img/buy-comics-merchandise.png'),
+                    text: 'dc merchandise'
+                },
+                {
+                    href: '#',
+                    src: require('@/assets/img/buy-comics-subscriptions.png'),
+                    text: 'subscriptions'
+                },
+                {
+                    href: '#',
+                    src: require('@/assets/img/buy-comics-shop-locator.png'),
+                    text: 'comic shop locator'
+                },
+                {
+                    href: '#',
+                    src: require('@/assets/img/buy-dc-power-visa.svg'),
+                    text: 'dc power visa'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -72,7 +78,6 @@ section {
 }
 
 a {
-    
     text-decoration: none;
     color: white;
     text-transform: uppercase;
