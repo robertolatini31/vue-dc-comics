@@ -10,11 +10,11 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import SiteHeader from './components/SiteHeader.vue'
-import SiteMain from './components/SiteMain.vue'
-import ServicesComponent from './components/ServicesComponent.vue'
-import SectionDcLists from './components/SectionDcLists.vue'
-import SiteFooter from './components/SiteFooter.vue'
+import SiteHeader from '@/components/SiteHeader.vue'
+import SiteMain from '@/components/SiteMain.vue'
+import ServicesComponent from '@/components/ServicesComponent.vue'
+import SectionDcLists from '@/components/SectionDcLists.vue'
+import SiteFooter from '@/components/SiteFooter.vue'
 export default {
   name: 'App',
   components: {
