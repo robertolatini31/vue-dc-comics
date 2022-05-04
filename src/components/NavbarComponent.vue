@@ -1,7 +1,7 @@
 <template>
     <nav>
         <ul>
-            <li v-for="(li, index) in menu" :key="index">{{li.li}}</li>
+            <li v-for="item in menu" :key="item.id" :class="item.text === 'comics' ? 'active' : ''"><a :href="item.src" :class="item.text === 'comics' ? 'active-color' : ''">{{item.text}}</a></li>
             
         </ul>
     </nav>
@@ -15,34 +15,54 @@ export default {
         return {
             menu: [
                 {
-                    li: 'characters'
+                    id: 1,
+                    src: '#',
+                    text: 'characters'
                 },
                 {
-                    li: 'comics'
+                    id: 2,
+                    src: '#',
+                    text: 'comics'
                 },
                 {
-                    li: 'movies'
+                    id: 3,
+                    src: '#',
+                    text: 'movies'
                 },
                 {
-                    li: 'tv'
+                    id: 4,
+                    src: '#',
+                    text: 'tv'
                 },
                 {
-                    li: 'games'
+                    id: 5,
+                    src: '#',
+                    text: 'games'
                 },
                 {
-                    li: 'collectibles'
+                    id: 6,
+                    src: '#',
+                    text: 'collectibles'
                 },
                 {
-                    li: 'videos'
+                    id: 7,
+                    src: '#',
+                    text: 'videos'
                 },
                 {
-                    li: 'fans'
+                    id: 8,
+                    src: '#',
+                    text: 'fans'
                 },
                 {
-                    li: 'news'
+                   id: 9,
+                    src: '#',
+                    text: 'news'
                 },
                 {
-                    li: 'shop'
+                   id: 10,
+                    src: '#',
+                    text: 'shop'
                 },
             ]
         }
@@ -55,30 +75,34 @@ nav {
     ul {
         list-style: none;
         li {
-            color: #464646;
-            text-transform: uppercase;
+            a{
+                text-decoration: none;
+                color: #464646;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+            padding: 3rem 0;
+            margin: 0 1rem;
             display: inline-block;
-            padding: 2rem 1rem;
-            font-size: 0.8rem;
-            font-weight: 600;
-            cursor: pointer;
+            border-bottom: 4px solid transparent;
+            &:hover{
+                border-color: #0282F9;
+            }
+            &:hover a {
+                color: #0282F9;
+            }
         }
     }
 }
 
 .active {
-    color: #0282F9;
-    position: relative;
+    border-bottom: 4px solid #0282F9;
 }
 
-.active:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%,-50%);
-  height: 1px;
-  width: 50%; 
-  border-bottom: 2px solid #0282F9;
+.active-color {
+    color: #0282F9;
 }
+
+
 </style>

@@ -31,7 +31,10 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    padding: 1rem;
+    img {
+        max-width: 70px;
+    }
+    padding: 0 1rem;
     .col-4, .col-8 {
         display: flex;
         align-items: center;
