@@ -63,6 +63,7 @@ export default {
 
 .col-2special {
     flex: 1 1 auto;
+    min-width: 220px;
 }
 
 .col-2special>div {

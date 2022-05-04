@@ -14,7 +14,7 @@
                     <!-- /.row -->
                 </div>
                 <!-- /.col-6 -->
-                <div class="col-6 bg-logo-big"></div>
+                <!-- <div class="col-6 bg-logo-big"></div> -->
                 <!-- /.col-6 -->
             </div>
             <!-- /.row -->
@@ -186,8 +186,10 @@ h3 {
 }
 
 section {
-    background-image: url('@/assets/img/footer-bg.jpg');
-    background-size: cover;
+    background-image: url('@/assets/img/dc-logo-bg.png'), url('@/assets/img/footer-bg.jpg');
+    background-position: 90% center, center;
+    background-size: 650px, cover;
+    background-repeat: no-repeat;
 }
 
 .bg-logo-big {
