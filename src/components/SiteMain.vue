@@ -8,8 +8,12 @@
                 <div class="row">
                     <div class="col-2" v-for="(book, index) in books" :key="index">
                         <div class="card">
-                            <img :src="book.thumb" alt="">
+                            <a href="#">
+                                <img :src="book.thumb" alt="">
+                            </a>
                             <h4>{{book.series}}</h4>
+                            <p>{{book.price}}</p>
+                            <p>{{book.type}}</p>
                         </div>
                         <!-- /.card -->
                     </div>
@@ -116,6 +120,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.container_cards{
+    padding-top: 2rem;
+}
+
 .container {
     position: relative;
     h3 {
@@ -133,7 +142,7 @@ export default {
 
     .col-2 {
             min-width: 240px;
-            padding: 3rem 0.5rem;
+            padding: 1rem 0.5rem;
         .card {
             img {
                 width: 220%;
@@ -147,6 +156,12 @@ export default {
                 padding: 0.5rem 0;
                 font-weight: 500;
                 font-size: 1rem;
+            }
+            p {
+                visibility: hidden;
+            }
+            &:hover p {
+                visibility: visible;
             }
         }
         
@@ -162,6 +177,7 @@ export default {
             color: white;
             background-color: $dc-primary;
             border: none;
+            cursor: pointer;
         }
     
     }
