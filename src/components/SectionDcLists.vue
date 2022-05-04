@@ -2,7 +2,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-6 py-3">
+                <div class="col-6 col-lists">
                     <div class="row">
                         <div class="col-4" v-for="({title, links}, index) in menuArray" :key="index">
                             <h3>{{title}}</h3>
@@ -163,16 +163,21 @@ ul {
         font-size: 0.8rem;
         a {
             text-decoration: none;
-            color: #959595;
+            color: $dc-list-text;
             font-weight: 500;
         }
     }
     
 }
 
-.py-3 {
-    padding: 3rem 0;
+.col-4 {
+    min-width: 135px;
 }
+
+.col-lists {
+    padding: 3rem 1rem;
+}
+
 
 h3 {
         color: white;
@@ -183,7 +188,6 @@ h3 {
 section {
     background-image: url('@/assets/img/footer-bg.jpg');
     background-size: cover;
-    padding: 0 1rem;
 }
 
 .bg-logo-big {

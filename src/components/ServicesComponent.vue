@@ -73,7 +73,7 @@ export default {
 }
 
 section {
-    background-color: #0282F9;
+    background-color: $dc-primary;
     padding: 3rem 1rem;
 }
 

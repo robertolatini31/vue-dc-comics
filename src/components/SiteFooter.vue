@@ -30,20 +30,20 @@ export default {
 
 footer {
     padding: 2rem 1rem;
-    background-color: #303030;
+    background-color: $dc-footer-dark;
 }
 
 h3 {
     text-transform: uppercase;
     font-weight: 900;
-    color: #0282F9;
+    color: $dc-primary;
 }
 
 button {
     text-transform: uppercase;
     background-color: transparent;
     padding: 0.7rem;
-    border: 2px solid #0282F9;
+    border: 2px solid $dc-primary;
     color: white;
     font-weight: 600;
 }

@@ -77,7 +77,7 @@ nav {
         li {
             a{
                 text-decoration: none;
-                color: #464646;
+                color: $dc-nav-text;
                 text-transform: uppercase;
                 font-size: 0.8rem;
                 font-weight: 600;
@@ -87,21 +87,21 @@ nav {
             display: inline-block;
             border-bottom: 4px solid transparent;
             &:hover{
-                border-color: #0282F9;
+                border-color: $dc-primary;
             }
             &:hover a {
-                color: #0282F9;
+                color: $dc-primary;
             }
         }
     }
 }
 
 .active {
-    border-bottom: 4px solid #0282F9;
+    border-bottom: 4px solid $dc-primary;
 }
 
 .active-color {
-    color: #0282F9;
+    color: $dc-primary;
 }
 
 

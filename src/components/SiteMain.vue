@@ -123,7 +123,7 @@ export default {
     top: -26px;
     left: 16px;
     text-transform: uppercase;
-    background-color: #0282F9;
+    background-color: $dc-primary;
     padding: 0.5rem 1rem;
     }
 
@@ -160,14 +160,14 @@ export default {
             font-weight: 600;
             text-transform: uppercase;
             color: white;
-            background-color: #0282F9;
+            background-color: $dc-primary;
             border: none;
         }
     
     }
 }
 main {
-    background-color: black;
+    background-color: $dc-main-dark;
     color: white;
 }
  
