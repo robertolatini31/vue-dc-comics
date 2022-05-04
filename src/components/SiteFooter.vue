@@ -2,10 +2,10 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-6 mb-2">
+                <div class="col-6">
                 <button>sing-up now!</button>
             </div>
-            <div class="col-6 text-right min-width-380">
+            <div class="col-6 social-col">
                 <h3>follow us</h3>
                 <img src="@/assets/img/footer-facebook.png" alt="">
                 <img src="@/assets/img/footer-twitter.png" alt="">
@@ -28,19 +28,13 @@ export default {
 
 <style lang="scss" scoped>
 
-.mb-2 {
-    margin-bottom: 2rem;
-}
-
 .col-6 {
+    margin-bottom: 2rem;
     flex-grow: 1;
 }
 
-.min-width-380 {
-    min-width: 380px;
-}
 footer {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
     background-color: $dc-footer-dark;
 }
 
@@ -59,10 +53,12 @@ button {
     font-weight: 600;
 }
 
-.text-right {
+.social-col {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
 }
 </style>
