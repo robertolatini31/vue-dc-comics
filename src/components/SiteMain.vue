@@ -16,6 +16,11 @@
                 </div>
             </div>
             <!-- /.container_cards -->
+
+            <div class="btn_container">
+                <button>load more</button>
+            </div>
+            <!-- /.btn_container -->
             
         </div>
         <!-- /.container -->
@@ -144,8 +149,21 @@ export default {
         }
         
     }
+    .btn_container {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        button {
+            padding: 0.5rem 3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background-color: #0282F9;
+            border: none;
+        }
+    
+    }
 }
-
 main {
     background-color: black;
     color: white;
