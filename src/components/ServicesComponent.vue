@@ -58,7 +58,7 @@ export default {
     align-items: center;
     justify-content: center;
     column-gap: 2rem;
-    row-gap: 1rem;
+    row-gap: 2rem;
 }
 
 .col-2special {
