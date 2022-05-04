@@ -81,8 +81,8 @@ a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 img {

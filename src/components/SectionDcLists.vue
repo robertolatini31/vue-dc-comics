@@ -164,6 +164,7 @@ ul {
         a {
             text-decoration: none;
             color: #959595;
+            font-weight: 500;
         }
     }
     

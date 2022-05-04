@@ -145,6 +145,8 @@ export default {
             h4 {
                 text-transform: uppercase;
                 padding: 0.5rem 0;
+                font-weight: 500;
+                font-size: 1rem;
             }
         }
         
