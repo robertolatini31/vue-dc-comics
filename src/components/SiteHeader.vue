@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 header {
     img {
-        max-width: 70px;
+        max-width: 90px;
     }
     padding: 0 1rem;
     .col-4, .col-8 {
